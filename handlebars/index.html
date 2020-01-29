@@ -8,8 +8,77 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.min.js" integrity="sha256-MlbTFXdOM7EZphnz0OyXQqPt2zBOjfRXCq14CfgSsS0=" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/script.js" charset="utf-8"></script>
+
+  <style>
+  main {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input {
+    outline: none;
+    width:50vw;
+    height:5vh;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius:50px;
+    border: 2px ridge olive;
+    padding:15px;
+    font-size:24px;
+    color: olive;
+    text-align:center;
+
+  }
+  input::placeholder {
+    font-size: 16px;
+    text-align:center;
+    filter: drop-shadow( 3px 3px 3px olive);
+  }
+  button {
+    outline:none;
+    height: 4vh;
+    min-height: 4vh;
+    width: 30vw;
+    border-radius: 10px 10px 25px 25px;
+    border:2px solid olive;
+    font-size: 16px;
+    color: olive;
+    filter: drop-shadow( 4px 4px 2px olive) blur(5px);
+    text-align:center;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  button:hover {
+    transform: scale(1.1);
+    filter: drop-shadow( 4px 4px 2px olive);
+  }
+  button:active {
+    transform: scale(1);
+  }
+  .a_galla_a_vedere {
+    color: olive;
+    filter: drop-shadow( 4px 4px 2px olive);
+  }
+  .la_palla_di {
+    color: brown;
+    filter: drop-shadow( 4px 4px 2px brown);
+  }
+  </style>
+
 </head>
 <body>
-  
+  <main>
+    <label for="fece_una_palla" style="color: olive;margin-top:40px;"> Potrebbe non sembrare, ma questa è una barra in cui inserire un input, con sotto un bottone per inviarlo :D</label>
+    <input id="fece_una_palla"type="text" placeholder="Tanto va la gatta al lardo che ci mette lo zampino">
+    <button>Apelle, figlio di Apollo</button>
+    <ol id="tutti_i_pesci_vennero">
+
+    </ol>
+  </main>
+  <script id="di_pelle_di__pollo" type="text/x-handlebars-template">
+    <li class="{{classe}}">{{messaggio}}</li>
+</script>
 </body>
 </html>
