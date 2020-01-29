@@ -2,12 +2,12 @@ $(document).ready(function(){
 
   // // fase 1
   // var studente = {
-  //   'nome': '',
-  //   'cognome': '',
-  //   'eta': 0,
+  //   'nome': 'Cosetta',
+  //   'cognome': 'Garibaldi',
+  //   'eta': 96,
   // }
   // for (var k in studente) {
-  //   alert(studente[k]);
+  //   $('body').append('<p><strong>' +studente[k]+ '</strong></p>');
   // }
 
   // // fase 2
@@ -39,7 +39,7 @@ $(document).ready(function(){
   //   },
   // ];
   // for (var i = 0; i < elencoStudentiCredibili.length; i++) {
-  //     alert( elencoStudentiCredibili[i].nome +' '+ elencoStudentiCredibili[i].cognome );
+  //     $('body').append('<p><strong>' +elencoStudentiCredibili[i].nome+' '+ elencoStudentiCredibili[i].cognome+ '</strong></p>');
   // }
 
   // fase 3
@@ -53,6 +53,6 @@ $(document).ready(function(){
   studente.cognome = prompt('Scrivi il cognome dello studente da aggiungere');
   studente.eta = prompt('Immetti l\'età dello studente da aggiungere');
   elencoStudenti.push(studente);
-  console.log(elencoStudenti);
+  $('body').html('<h2>' +elencoStudenti[0].nome+ ' ' +elencoStudenti[0].cognome+ '</h2>');
 
 });
